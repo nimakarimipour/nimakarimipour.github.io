@@ -88,17 +88,17 @@
         </div>
         <div class="about-section pt-4 px-3 px-lg-4 mt-1">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" style="text-align: justify;">
               <h2 class="h3 mb-3">About Me</h2>
-              <p>I am a Ph.D. student at University of California, Riverside and a member of the <a
-                  href="https://riple.cs.ucr.edu/">RIPLE</a> group. I work in the areas of programming languages and
-                software engineering, and I am interested in making tools to make large scale softwares more reliable
-                and
-                secure. Recently I have worked on practical type inference for <a
-                  href="https://www.uber.com/blog/nullaway/">NullAway</a> and made a tool that can adopt your codebase
-                to
-                enroll in NullAway for free, available at <a
-                  href="https://github.com/ucr-riple/NullAwayAnnotator">Annotator</a>.</p>
+              <p>
+                I am a Ph.D. student at the University of California, Riverside, and a member of the <a
+                  href="https://riple.cs.ucr.edu/">RIPLE</a> research group. My work focuses on programming languages
+                and software engineering, with a particular interest in developing tools that enhance the reliability
+                and security of large-scale software systems. Recently, I developed a practical type inference solution
+                for <a href="https://www.uber.com/blog/nullaway/">NullAway</a>, unmatched by other tools, and created <a
+                  href="https://github.com/ucr-riple/NullAwayAnnotator">Annotator</a>, an automated tool for seamlessly
+                integrating NullAway into existing codebases.
+              </p>
             </div>
           </div>
         </div>
@@ -108,24 +108,28 @@
           <div class="timeline">
             <div class="timeline-card timeline-card-primary card shadow-sm">
               <div class="card-body">
-                <div class="h5 mb-1">Graduate Research Assistant<span class="text-muted h6">
-                    <a href="https://www.ucr.edu/" style="color: gray;"> University of California, Riverside.</a>
-                  </span></div>
-                <div class="text-muted text-small mb-2">Jan, 2020 - Present</div>
-                <div>
-                  Advisor: <a href="https://manu.sridharan.net/">Prof. Manu Sridharan</a>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-card timeline-card-primary card shadow-sm">
-              <div class="card-body">
-                <div class="h5 mb-1">Ph.D. Software Engineer Intern at Platform Team<span class="text-muted h6">
+                <div class="h5 mb-1">Ph.D. Research Intern at Programming Systems Group (<a
+                    href="https://www.uber.com/fr/en/about/science/">PSG</a>)<span class="text-muted h6">
                     <a href="https://uber.com" style="color: gray;"> Uber Technologies, Inc.</a>
                   </span></div>
                 <div class="text-muted text-small mb-2">Jun, 2022 - Sep, 2022</div>
-                <div>
+                <div style="text-align: justify;">
                   Worked on enhancing <a href="https://github.com/ucr-riple/NullAwayAnnotator">Annotator</a> to work at
-                  monorepo scale.
+                  monorepo scale. Annotator is a tool designed to simplify and accelerate the adoption of NullAway in
+                  existing codebases. By automating the search for a set of annotations that minimizes reported NullAway
+                  errors, it streamlines onboarding projects to NullAway. Once executed, Annotator can bring code to a
+                  state where no NullAway errors are reported, enabling immediate NullAway integration. For cases where
+                  errors cannot be fully resolved with annotations alone, Annotator automatically applies suppression
+                  annotations. It also considers build target boundaries and can be configured to avoid adding
+                  annotations that might trigger errors in downstream dependencies. This modular approach supports
+                  large-scale projects, allowing them to adopt NullAway incrementally, target by target. Used internally
+                  at Uber, Annotator has successfully annotated millions of lines of code, facilitating the integration
+                  of an entire Java monorepo into NullAway.
+                </div>
+                <div>
+                  <strong>Recognized for its impact</strong>, with a dedicated blog post, <a
+                    href="https://gitar.ai/blog/automating-java-codebase-annotations-for-null-safety">Automating Java
+                    Codebase Annotations for Null Safety</a> published by <a href="https://gitar.ai/">Gitar</a>.
                 </div>
               </div>
             </div>
@@ -164,6 +168,9 @@
                       href="https://www.ucr.edu/" style="color: gray;"> at University of California,
                       Riverside</a></span></div>
                 <div class="text-muted text-small mb-2">2020 - Present</div>
+                <div>
+                  Advisor: <a href="https://manu.sridharan.net/">Prof. Manu Sridharan</a>
+                </div>
               </div>
             </div>
             <div class="timeline-card timeline-card-success card shadow-sm">
