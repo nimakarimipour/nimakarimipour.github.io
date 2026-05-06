@@ -14,7 +14,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
   <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
-  <link href="css/main.css?ver=2.1.0" rel="stylesheet">
+  <link href="css/main.css?ver=3.0.0" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body id="top">
@@ -27,7 +28,11 @@
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
         <a href="#education">Education</a>
+        <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
       </div>
     </div>
   </nav>
@@ -37,7 +42,9 @@
     <div class="container">
       <div class="hero-row">
         <div class="hero-avatar-col">
-          <img src="images/avatar.jpg" alt="Nima Karimipour" class="hero-avatar" />
+          <div class="avatar-ring">
+            <img src="images/avatar.jpg" alt="Nima Karimipour" class="hero-avatar" />
+          </div>
         </div>
         <div class="hero-info-col">
           <h1 class="hero-name">Nima Karimipour</h1>
@@ -68,12 +75,12 @@
   <!-- About Section -->
   <section class="section" id="about">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header" data-aos="fade-up">
         <span class="section-tag">01</span>
         <h2 class="section-title">About Me</h2>
         <div class="section-line"></div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
         <div class="col-lg-10">
           <p class="about-text">
             I'm a Research Scientist at <a href="https://gitar.ai">Gitar.ai</a>, building agents.
@@ -94,14 +101,14 @@
   <!-- Experience Section -->
   <section class="section section-alt" id="experience">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header" data-aos="fade-up">
         <span class="section-tag">02</span>
         <h2 class="section-title">Experience</h2>
         <div class="section-line"></div>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-10">
-          <div class="exp-card">
+          <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
             <div class="exp-card-accent"></div>
             <div class="exp-card-content">
               <div class="exp-header">
@@ -115,7 +122,7 @@
             </div>
           </div>
 
-          <div class="exp-card">
+          <div class="exp-card" data-aos="fade-up" data-aos-delay="200">
             <div class="exp-card-accent"></div>
             <div class="exp-card-content">
               <div class="exp-header">
@@ -152,7 +159,7 @@
   <!-- Publications Section -->
   <section class="section" id="publications">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header" data-aos="fade-up">
         <span class="section-tag">03</span>
         <h2 class="section-title">Publications</h2>
         <div class="section-line"></div>
@@ -160,7 +167,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-10">
 
-          <div class="pub-card">
+          <div class="pub-card" data-aos="fade-up" data-aos-delay="100">
             <div class="pub-venue-badge">ISSTA 2026</div>
             <h3 class="pub-title">LLM-Based Repair of Static Nullability Errors</h3>
             <p class="pub-authors">Nima Karimipour, Pascal Joos, Michael Pradel, Martin Kellogg, and Manu Sridharan</p>
@@ -172,7 +179,7 @@
             </div>
           </div>
 
-          <div class="pub-card">
+          <div class="pub-card" data-aos="fade-up" data-aos-delay="150">
             <div class="pub-venue-badge">ECOOP 2025</div>
             <h3 class="pub-title">Practical Type-Based Taint Checking and Inference</h3>
             <p class="pub-authors">Nima Karimipour, Kanak Das, Behnaz Hassanshahi and Manu Sridharan</p>
@@ -184,7 +191,7 @@
             </div>
           </div>
 
-          <div class="pub-card">
+          <div class="pub-card" data-aos="fade-up" data-aos-delay="200">
             <div class="pub-venue-badge">FSE 2025</div>
             <h3 class="pub-title">A New Approach to Evaluating Nullability Inference Tools</h3>
             <p class="pub-authors">Nima Karimipour, Erfan Arvan, Martin Kellogg, and Manu Sridharan</p>
@@ -196,7 +203,7 @@
             </div>
           </div>
 
-          <div class="pub-card">
+          <div class="pub-card" data-aos="fade-up" data-aos-delay="250">
             <div class="pub-venue-badge">FSE 2023</div>
             <h3 class="pub-title">Practical Inference of Nullability Types</h3>
             <p class="pub-authors">Nima Karimipour, Justin Pham, Lazaro Clapp, and Manu Sridharan</p>
@@ -224,11 +231,50 @@
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section class="section section-alt" id="education">
+  <!-- Projects Section -->
+  <section class="section section-alt" id="projects">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header" data-aos="fade-up">
         <span class="section-tag">04</span>
+        <h2 class="section-title">Open Source</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="project-grid">
+
+            <a href="https://github.com/ucr-riple/NullAwayAnnotator" target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="project-icon"><i class="fas fa-robot"></i></div>
+              <h3 class="project-name">Annotator</h3>
+              <p class="project-desc">Automated tool that integrates NullAway into existing codebases by inferring and applying nullability annotations at scale.</p>
+              <span class="project-tag">Java</span>
+            </a>
+
+            <a href="https://github.com/uber/NullAway" target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+              <h3 class="project-name">NullAway</h3>
+              <p class="project-desc">A fast, practical null pointer checker for Java, built as an Error Prone plugin. Core contributor with type inference extensions.</p>
+              <span class="project-tag">Java</span>
+            </a>
+
+            <a href="https://github.com/ucr-riple/TaintTyper" target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="project-icon"><i class="fas fa-fingerprint"></i></div>
+              <h3 class="project-name">TaintTyper</h3>
+              <p class="project-desc">A practical type-based taint checker and inference tool for Java, exceeding recall of state-of-the-art whole-program taint analyzers.</p>
+              <span class="project-tag">Java</span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">05</span>
         <h2 class="section-title">Education</h2>
         <div class="section-line"></div>
       </div>
@@ -236,7 +282,7 @@
         <div class="col-lg-10">
           <div class="edu-grid">
 
-            <div class="edu-card">
+            <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
               <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
               <h3 class="edu-degree">Ph.D. in Computer Science and Engineering</h3>
               <p class="edu-school"><a href="https://www.ucr.edu/">University of California, Riverside</a></p>
@@ -244,7 +290,7 @@
               <p class="edu-detail">Advisor: <a href="https://manu.sridharan.net/">Prof. Manu Sridharan</a></p>
             </div>
 
-            <div class="edu-card">
+            <div class="edu-card" data-aos="fade-up" data-aos-delay="200">
               <div class="edu-icon"><i class="fas fa-university"></i></div>
               <h3 class="edu-degree">B.Sc. in Computer Engineering</h3>
               <p class="edu-school"><a href="https://en.sharif.edu">Sharif University of Technology</a></p>
@@ -273,7 +319,8 @@
   </footer>
 
   <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-  <script src="scripts/main.js?ver=2.1.0"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="scripts/main.js?ver=3.0.0"></script>
 </body>
 
 </html>

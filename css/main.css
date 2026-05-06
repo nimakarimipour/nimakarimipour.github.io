@@ -35,6 +35,41 @@
   --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* --- Dark Mode --- */
+[data-theme="dark"] {
+  --color-bg: #0f0f1a;
+  --color-bg-alt: #161625;
+  --color-surface: #1c1c30;
+  --color-text: #e4e4ef;
+  --color-text-secondary: #a0a0bb;
+  --color-text-muted: #6b6b85;
+  --color-accent: #818cf8;
+  --color-accent-light: #a5b4fc;
+  --color-accent-bg: rgba(129, 140, 248, 0.12);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-dark: #08081a;
+  --color-dark-mid: #0e0e24;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.25), 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.35), 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .navbar-fixed.visible {
+  background: rgba(15, 15, 26, 0.85);
+}
+
+[data-theme="dark"] .nav-logo {
+  color: var(--color-text) !important;
+}
+
+[data-theme="dark"] .nav-links a {
+  color: var(--color-text-secondary) !important;
+}
+
+[data-theme="dark"] .nav-links a:hover {
+  color: var(--color-text) !important;
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -165,6 +200,21 @@ a:hover {
   flex-shrink: 0;
 }
 
+.avatar-ring {
+  position: relative;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light), #c084fc, var(--color-accent));
+  background-size: 300% 300%;
+  animation: ring-shimmer 4s ease infinite;
+}
+
+@keyframes ring-shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
 .hero-avatar {
   width: 120px;
   height: 120px;
@@ -172,6 +222,7 @@ a:hover {
   object-fit: cover;
   border: 3px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  display: block;
 }
 
 .hero-info-col {
@@ -558,6 +609,94 @@ a:hover {
   color: var(--color-text-secondary);
 }
 
+/* --- Theme Toggle --- */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  transition: all var(--transition-fast);
+  margin-left: 0.5rem;
+}
+
+.theme-toggle:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  background: var(--color-accent-bg);
+}
+
+/* --- Project Cards --- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.project-card {
+  display: block;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-fast);
+  border: 1px solid transparent;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-accent);
+}
+
+.project-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.project-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.2px;
+}
+
+.project-desc {
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.project-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  background: var(--color-accent-bg);
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  letter-spacing: 0.03em;
+}
+
 /* --- Footer --- */
 .site-footer {
   padding: 2.5rem 2rem;
@@ -654,6 +793,10 @@ a:hover {
   .edu-grid {
     grid-template-columns: 1fr;
   }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
@@ -687,7 +830,7 @@ a:hover {
     padding: 1.5rem;
   }
 
-  .exp-card, .pub-card, .edu-card {
+  .exp-card, .pub-card, .edu-card, .project-card {
     box-shadow: none;
     border: 1px solid #e0e0e0;
     break-inside: avoid;
