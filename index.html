@@ -6,347 +6,304 @@
   <meta name="keywords"
     content="Static Analysis, Nima, Nima Karimipour, Nima K, Computer Science, Sonar, SonarSource, SonarQube, AI Code Review, Code Verification, Gitar, Gitar.ai, Agents, Uber, Uber Technologies, NullAway, Annotator, NullAwayAnnotator, UCR RIPLE, Prof. Manu Sridharan, Java, Software Engineering">
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nima Karimipour — Staff Software Engineer at Sonar, building agents on Gitar. Ph.D. in Computer Science from UC Riverside.">
   <title>Nima Karimipour</title>
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
-  <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
-  <link href="css/main.css?ver=3.1.0" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="css/redesign.css?ver=4.0.0" rel="stylesheet">
 </head>
 
-<body id="top">
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="bg-glow" aria-hidden="true"><span></span><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
 
-  <!-- Navigation -->
-  <nav class="navbar-fixed" id="navbar">
-    <div class="nav-inner">
-      <a href="#top" class="nav-logo">NK</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">
-          <i class="fas fa-moon"></i>
-        </button>
-      </div>
-    </div>
-  </nav>
+  <div class="layout">
 
-  <!-- Hero Banner -->
-  <section class="hero-banner" id="hero">
-    <div class="container">
-      <div class="hero-row">
-        <div class="hero-avatar-col">
-          <div class="avatar-ring">
-            <img src="images/avatar.jpg" alt="Nima Karimipour" class="hero-avatar" />
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="side-inner">
+        <div class="avatar-wrap load" style="--d:0ms">
+          <div class="avatar-clip"><img src="images/avatar.jpg" alt="Nima Karimipour" class="avatar" /></div>
+        </div>
+
+        <h1 class="name">
+          <span class="w" style="--i:0">Nima</span>
+          <span class="w dim" style="--i:1">Karimipour</span>
+        </h1>
+
+        <p class="role load" style="--d:350ms">
+          Staff Software Engineer at <a href="https://www.sonarsource.com" target="_blank" rel="noopener noreferrer">Sonar</a>
+        </p>
+        <p class="sub load" style="--d:450ms">
+          Building agents on <a href="https://gitar.ai" target="_blank" rel="noopener noreferrer">Gitar</a>. Ph.D. in Computer Science.
+        </p>
+
+        <nav class="side-nav load" style="--d:550ms" aria-label="Sections">
+          <a href="#about"><span class="nav-num">01</span><span class="nav-line"></span><span class="nav-label">About</span></a>
+          <a href="#experience"><span class="nav-num">02</span><span class="nav-line"></span><span class="nav-label">Experience</span></a>
+          <a href="#publications"><span class="nav-num">03</span><span class="nav-line"></span><span class="nav-label">Publications</span></a>
+          <a href="#projects"><span class="nav-num">04</span><span class="nav-line"></span><span class="nav-label">Open Source</span></a>
+          <a href="#education"><span class="nav-num">05</span><span class="nav-line"></span><span class="nav-label">Education</span></a>
+        </nav>
+
+        <div class="side-bottom load" style="--d:650ms">
+          <div class="socials">
+            <a href="mailto:nima.karimipour@sonarsource.com" class="icon-btn" title="Email" aria-label="Email">
+              <svg viewBox="0 0 24 24" class="stroke"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+            <a href="https://github.com/nimakarimipour" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub" aria-label="GitHub">
+              <span class="mask-icon" style="--src:url(/images/github-mark.svg)"></span>
+            </a>
+            <a href="https://www.linkedin.com/in/nima-karimipour-846359144/" target="_blank" rel="noopener noreferrer" class="icon-btn" title="LinkedIn" aria-label="LinkedIn">
+              <span class="mask-icon" style="--src:url(/images/linkedin.svg)"></span>
+            </a>
+            <a href="https://scholar.google.com/citations?user=zPD7PukAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Google Scholar" aria-label="Google Scholar">
+              <svg viewBox="0 0 24 24" class="stroke"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+            </a>
+            <button class="icon-btn theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">
+              <svg viewBox="0 0 24 24" class="stroke icon-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+              <svg viewBox="0 0 24 24" class="stroke icon-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            </button>
           </div>
-        </div>
-        <div class="hero-info-col">
-          <h1 class="hero-name">Nima Karimipour</h1>
-          <p class="hero-title">Staff Engineer at <a href="https://www.sonarsource.com" target="_blank" rel="noopener noreferrer">Sonar</a></p>
-          <p class="hero-subtitle">working on <a href="https://gitar.ai" target="_blank" rel="noopener noreferrer">Gitar</a> &nbsp;&middot;&nbsp; Ph.D. in CS</p>
-          <div class="hero-links">
-            <a href="mailto:nima.karimipour@sonarsource.com" class="hero-btn" title="Email">
-              <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://github.com/nimakarimipour" target="_blank" rel="noopener noreferrer" class="hero-btn" title="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/nima-karimipour-846359144/" target="_blank" rel="noopener noreferrer" class="hero-btn" title="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://scholar.google.com/citations?user=zPD7PukAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="hero-btn" title="Google Scholar">
-              <i class="fas fa-graduation-cap"></i>
-            </a>
-            <a href="files/CV.pdf" target="_blank" class="hero-btn hero-btn-outline" title="Download CV">
-              <i class="fas fa-file-alt"></i> <span>CV</span>
-            </a>
-          </div>
+          <a href="files/CV.pdf" target="_blank" class="cv-link">
+            <span>Curriculum Vitae</span>
+            <svg viewBox="0 0 24 24" class="stroke arrow"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </a>
         </div>
       </div>
-    </div>
-  </section>
+    </aside>
 
-  <!-- About Section -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">01</span>
-        <h2 class="section-title">About Me</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
-        <div class="col-lg-10">
-          <p class="about-text">
-            I'm a Staff Engineer at <a href="https://www.sonarsource.com">Sonar</a>, building agents on
-            <a href="https://gitar.ai">Gitar</a>, the AI-native code review platform Sonar acquired in May 2026.
-            I received my Ph.D. from the University of California, Riverside, advised by <a
-              href="https://manu.sridharan.net">Prof. Manu Sridharan</a>, where I was a member of the <a
-              href="https://riple.cs.ucr.edu/">RIPLE</a> research group. My research centers on programming
-            languages and software engineering, with a special focus on creating tools that boost the reliability
-            and security of large-scale software systems. During my Ph.D., I developed a type inference tool
-            for <a href="https://www.uber.com/blog/nullaway/">NullAway</a>, offering capabilities unmatched by other
-            tools, and created <a href="https://github.com/ucr-riple/NullAwayAnnotator">Annotator</a>, an automated
-            tool that seamlessly integrates NullAway into existing codebases.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Main content -->
+    <main class="content">
 
-  <!-- Experience Section -->
-  <section class="section section-alt" id="experience">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">02</span>
-        <h2 class="section-title">Experience</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="exp-card-accent"></div>
-            <div class="exp-card-content">
-              <div class="exp-header">
-                <div>
-                  <h3 class="exp-role">Staff Engineer</h3>
-                  <p class="exp-company"><a href="https://www.sonarsource.com">Sonar</a> &mdash; <a href="https://gitar.ai">Gitar</a></p>
-                </div>
-                <span class="exp-date">2026 &ndash; Present</span>
+      <section class="section" id="about">
+        <h2 class="section-title reveal"><span class="num">01</span>About</h2>
+        <p class="lead reveal">
+          I build agents that review, fix, and verify code, and I care about tools that make large-scale
+          software more <em>reliable</em> and <em>secure</em>.
+        </p>
+        <p class="reveal">
+          I'm a Staff Software Engineer at <a href="https://www.sonarsource.com">Sonar</a>, building agents on
+          <a href="https://gitar.ai">Gitar</a>, the AI-native code review platform Sonar acquired in May 2026.
+          I received my Ph.D. from the University of California, Riverside, advised by
+          <a href="https://manu.sridharan.net">Prof. Manu Sridharan</a>, where I was a member of the
+          <a href="https://riple.cs.ucr.edu/">RIPLE</a> research group.
+        </p>
+        <p class="reveal">
+          My research centers on programming languages and software engineering. During my Ph.D., I developed a
+          type inference tool for <a href="https://www.uber.com/blog/nullaway/">NullAway</a>, offering capabilities
+          unmatched by other tools, and created <a href="https://github.com/ucr-riple/NullAwayAnnotator">Annotator</a>,
+          an automated tool that seamlessly integrates NullAway into existing codebases.
+        </p>
+      </section>
+
+      <section class="section" id="experience">
+        <h2 class="section-title reveal"><span class="num">02</span>Experience</h2>
+
+        <ol class="timeline" id="timeline">
+          <span class="timeline-progress" aria-hidden="true"></span>
+
+          <li class="tl-item reveal">
+            <p class="tl-date">2026 — Present</p>
+            <h3 class="tl-role">Staff Software Engineer</h3>
+            <p class="tl-org"><a href="https://www.sonarsource.com">Sonar</a> · <a href="https://gitar.ai">Gitar</a></p>
+            <p>
+              Continuing to build agents for software engineering automation on Gitar, now part of Sonar's
+              code verification platform. Gitar reviews code from the moment an agent starts writing it to the
+              moment it lands, generating fixes and iterating until CI passes.
+            </p>
+            <a href="https://www.sonarsource.com/blog/welcoming-gitar-to-sonar/" target="_blank" rel="noopener noreferrer" class="tl-banner">
+              <img src="images/sonar-gitar.jpg" alt="Sonar + Gitar" loading="lazy" />
+            </a>
+          </li>
+
+          <li class="tl-item reveal">
+            <p class="tl-date">2025 — 2026</p>
+            <h3 class="tl-role">Research Scientist</h3>
+            <p class="tl-org"><a href="https://gitar.ai">Gitar.ai</a></p>
+            <p>Building agents for software engineering automation.</p>
+            <p class="note">
+              Gitar was <a href="https://www.sonarsource.com/company/press-releases/sonar-acquires-gitar/">acquired by Sonar</a>
+              in May 2026, expanding Sonar's code verification platform into AI code review.
+            </p>
+          </li>
+
+          <li class="tl-item reveal">
+            <p class="tl-date">Jun — Sep 2022</p>
+            <h3 class="tl-role">Ph.D. Research Intern</h3>
+            <p class="tl-org"><a href="https://uber.com">Uber Technologies</a> · Programming Systems Group (<a href="https://www.uber.com/fr/en/about/science/">PSG</a>)</p>
+            <p>
+              Worked on enhancing <a href="https://github.com/ucr-riple/NullAwayAnnotator">Annotator</a> to work at
+              monorepo scale. Used internally at Uber, Annotator has annotated millions of lines of code, bringing an
+              entire Java monorepo onto NullAway.
+            </p>
+            <div class="more" id="uberMore">
+              <div class="more-inner">
+                <p>
+                  Annotator simplifies and accelerates the adoption of NullAway in existing codebases. By automating
+                  the search for a set of annotations that minimizes reported NullAway errors, it streamlines
+                  onboarding projects to NullAway. Once executed, Annotator can bring code to a state where no
+                  NullAway errors are reported, enabling immediate integration. For cases where errors cannot be
+                  fully resolved with annotations alone, it automatically applies suppression annotations. It also
+                  considers build target boundaries and can be configured to avoid adding annotations that might
+                  trigger errors in downstream dependencies, so large projects can adopt NullAway incrementally,
+                  target by target.
+                </p>
               </div>
-              <p class="exp-desc">
-                Continuing to build agents for software engineering automation on Gitar, now part of Sonar's
-                code verification platform. Gitar reviews code from the moment an agent starts writing it to the
-                moment it lands, generating fixes and iterating until CI passes.
-              </p>
-              <a href="https://www.sonarsource.com/blog/welcoming-gitar-to-sonar/" target="_blank" rel="noopener noreferrer" class="exp-banner">
-                <img src="images/sonar-gitar.jpg" alt="Sonar + Gitar" loading="lazy" />
-              </a>
             </div>
-          </div>
+            <button class="text-btn more-btn" data-target="uberMore" aria-expanded="false">
+              <span class="more-label">Read more</span>
+              <svg viewBox="0 0 24 24" class="stroke chev"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <p class="note">
+              Featured in <a href="https://gitar.ai/blog/automating-java-codebase-annotations-for-null-safety">Automating Java Codebase Annotations for Null Safety</a>
+              by <a href="https://gitar.ai/">Gitar</a>.
+            </p>
+          </li>
+        </ol>
+      </section>
 
-          <div class="exp-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="exp-card-accent"></div>
-            <div class="exp-card-content">
-              <div class="exp-header">
-                <div>
-                  <h3 class="exp-role">Research Scientist</h3>
-                  <p class="exp-company"><a href="https://gitar.ai">Gitar.ai</a></p>
-                </div>
-                <span class="exp-date">2025 &ndash; 2026</span>
+      <section class="section" id="publications">
+        <h2 class="section-title reveal"><span class="num">03</span>Publications</h2>
+
+        <ul class="pubs">
+          <li class="pub reveal">
+            <span class="pub-venue">ISSTA '26</span>
+            <div>
+              <h3 class="pub-title">LLM-Based Repair of Static Nullability Errors</h3>
+              <p class="pub-authors"><span class="me">Nima Karimipour</span>, Pascal Joos, Michael Pradel, Martin Kellogg, and Manu Sridharan</p>
+              <p class="pub-detail">35th ACM SIGSOFT International Symposium on Software Testing and Analysis</p>
+              <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2507.20674">PDF</a>
+                <a href="https://arxiv.org/abs/2507.20674">DOI</a>
+                <a href="files/papers/issta2026-llm-nullability-repair.bib">BibTeX</a>
               </div>
-              <p class="exp-desc">Building agents for software engineering automation.</p>
-              <p class="exp-highlight">
-                <i class="fas fa-star"></i>
-                Gitar was <a href="https://www.sonarsource.com/company/press-releases/sonar-acquires-gitar/">acquired by Sonar</a> in May 2026, expanding Sonar's code verification platform into AI code review.
-              </p>
             </div>
-          </div>
+          </li>
 
-          <div class="exp-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="exp-card-accent"></div>
-            <div class="exp-card-content">
-              <div class="exp-header">
-                <div>
-                  <h3 class="exp-role">Ph.D. Research Intern</h3>
-                  <p class="exp-company"><a href="https://uber.com">Uber Technologies, Inc.</a> &mdash; Programming Systems Group (<a href="https://www.uber.com/fr/en/about/science/">PSG</a>)</p>
-                </div>
-                <span class="exp-date">Jun &ndash; Sep 2022</span>
+          <li class="pub reveal">
+            <span class="pub-venue">ECOOP '25</span>
+            <div>
+              <h3 class="pub-title">Practical Type-Based Taint Checking and Inference</h3>
+              <p class="pub-authors"><span class="me">Nima Karimipour</span>, Kanak Das, Behnaz Hassanshahi, and Manu Sridharan</p>
+              <p class="pub-detail">39th European Conference on Object-Oriented Programming</p>
+              <div class="pub-links">
+                <a href="files/papers/ecoop2025-taint-inference.pdf">PDF</a>
+                <a href="https://arxiv.org/abs/2504.18529">DOI</a>
+                <a href="files/papers/ecoop2025-taint-inference.bib">BibTeX</a>
               </div>
-              <p class="exp-desc">
-                Worked on enhancing <a href="https://github.com/ucr-riple/NullAwayAnnotator">Annotator</a> to work at
-                monorepo scale. Annotator is a tool designed to simplify and accelerate the adoption of NullAway in
-                existing codebases. By automating the search for a set of annotations that minimizes reported NullAway
-                errors, it streamlines onboarding projects to NullAway. Once executed, Annotator can bring code to a
-                state where no NullAway errors are reported, enabling immediate NullAway integration. For cases where
-                errors cannot be fully resolved with annotations alone, Annotator automatically applies suppression
-                annotations. It also considers build target boundaries and can be configured to avoid adding
-                annotations that might trigger errors in downstream dependencies. This modular approach supports
-                large-scale projects, allowing them to adopt NullAway incrementally, target by target. Used internally
-                at Uber, Annotator has successfully annotated millions of lines of code, facilitating the integration
-                of an entire Java monorepo into NullAway.
-              </p>
-              <p class="exp-highlight">
-                <i class="fas fa-star"></i>
-                Recognized with a dedicated blog post: <a href="https://gitar.ai/blog/automating-java-codebase-annotations-for-null-safety">Automating Java Codebase Annotations for Null Safety</a> by <a href="https://gitar.ai/">Gitar</a>.
-              </p>
             </div>
-          </div>
+          </li>
+
+          <li class="pub reveal">
+            <span class="pub-venue">FSE '25</span>
+            <div>
+              <h3 class="pub-title">A New Approach to Evaluating Nullability Inference Tools</h3>
+              <p class="pub-authors"><span class="me">Nima Karimipour</span>, Erfan Arvan, Martin Kellogg, and Manu Sridharan</p>
+              <p class="pub-detail">33rd ACM International Conference on the Foundations of Software Engineering</p>
+              <div class="pub-links">
+                <a href="files/papers/fse2025-nullability-comparison.pdf">PDF</a>
+                <a href="http://dx.doi.org/10.1145/3715732">DOI</a>
+                <a href="files/papers/fse2025-nullability-comparison.bib">BibTeX</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="pub reveal">
+            <span class="pub-venue">FSE '23</span>
+            <div>
+              <h3 class="pub-title">Practical Inference of Nullability Types</h3>
+              <p class="pub-authors"><span class="me">Nima Karimipour</span>, Justin Pham, Lazaro Clapp, and Manu Sridharan</p>
+              <p class="pub-detail">31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</p>
+              <div class="pub-links">
+                <a href="https://manu.sridharan.net/files/FSE23Practical.pdf">PDF</a>
+                <a href="http://dx.doi.org/10.1145/3611643.3616326">DOI</a>
+                <a href="https://manu.sridharan.net/pubs_bib.html#karimipour23practical">BibTeX</a>
+                <button class="text-btn talk-btn" id="talkBtn">
+                  <svg viewBox="0 0 24 24" class="fill play"><polygon points="7 4 20 12 7 20 7 4"/></svg>
+                  Watch the talk
+                </button>
+              </div>
+              <div class="talk-embed" id="talkEmbed"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="projects">
+        <h2 class="section-title reveal"><span class="num">04</span>Open Source</h2>
+
+        <div class="cards">
+          <a href="https://github.com/ucr-riple/NullAwayAnnotator" target="_blank" rel="noopener noreferrer" class="card reveal">
+            <div class="card-top">
+              <h3 class="card-name">Annotator</h3>
+              <svg viewBox="0 0 24 24" class="stroke arrow"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </div>
+            <p>Integrates NullAway into existing codebases by inferring and applying nullability annotations at scale.</p>
+            <span class="tag">Java</span>
+          </a>
+
+          <a href="https://github.com/uber/NullAway" target="_blank" rel="noopener noreferrer" class="card reveal">
+            <div class="card-top">
+              <h3 class="card-name">NullAway</h3>
+              <svg viewBox="0 0 24 24" class="stroke arrow"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </div>
+            <p>A fast, practical null pointer checker for Java, built as an Error Prone plugin. Core contributor with type inference extensions.</p>
+            <span class="tag">Java</span>
+          </a>
+
+          <a href="https://github.com/ucr-riple/TaintTyper" target="_blank" rel="noopener noreferrer" class="card reveal">
+            <div class="card-top">
+              <h3 class="card-name">TaintTyper</h3>
+              <svg viewBox="0 0 24 24" class="stroke arrow"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </div>
+            <p>Type-based taint checking and inference for Java, exceeding the recall of state-of-the-art whole-program analyzers.</p>
+            <span class="tag">Java</span>
+          </a>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Publications Section -->
-  <section class="section" id="publications">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">03</span>
-        <h2 class="section-title">Publications</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
+      <section class="section" id="education">
+        <h2 class="section-title reveal"><span class="num">05</span>Education</h2>
 
-          <div class="pub-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="pub-venue-badge">ISSTA 2026</div>
-            <h3 class="pub-title">LLM-Based Repair of Static Nullability Errors</h3>
-            <p class="pub-authors">Nima Karimipour, Pascal Joos, Michael Pradel, Martin Kellogg, and Manu Sridharan</p>
-            <p class="pub-venue-detail">In 35th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2026)</p>
-            <div class="pub-links">
-              <a href="files/papers/issta2026-llm-nullability-repair.bib" class="pub-link"><i class="fas fa-quote-right"></i> BibTeX</a>
-              <a href="https://arxiv.org/abs/2507.20674" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-              <a href="https://arxiv.org/pdf/2507.20674" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-            </div>
-          </div>
-
-          <div class="pub-card" data-aos="fade-up" data-aos-delay="150">
-            <div class="pub-venue-badge">ECOOP 2025</div>
-            <h3 class="pub-title">Practical Type-Based Taint Checking and Inference</h3>
-            <p class="pub-authors">Nima Karimipour, Kanak Das, Behnaz Hassanshahi and Manu Sridharan</p>
-            <p class="pub-venue-detail">In 39th European Conference on Object-Oriented Programming (ECOOP 2025)</p>
-            <div class="pub-links">
-              <a href="files/papers/ecoop2025-taint-inference.bib" class="pub-link"><i class="fas fa-quote-right"></i> BibTeX</a>
-              <a href="https://arxiv.org/abs/2504.18529" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-              <a href="files/papers/ecoop2025-taint-inference.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-            </div>
-          </div>
-
-          <div class="pub-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="pub-venue-badge">FSE 2025</div>
-            <h3 class="pub-title">A New Approach to Evaluating Nullability Inference Tools</h3>
-            <p class="pub-authors">Nima Karimipour, Erfan Arvan, Martin Kellogg, and Manu Sridharan</p>
-            <p class="pub-venue-detail">In 33rd ACM International Conference on the Foundations of Software Engineering (FSE 2025)</p>
-            <div class="pub-links">
-              <a href="files/papers/fse2025-nullability-comparison.bib" class="pub-link"><i class="fas fa-quote-right"></i> BibTeX</a>
-              <a href="http://dx.doi.org/10.1145/3715732" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-              <a href="files/papers/fse2025-nullability-comparison.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-            </div>
-          </div>
-
-          <div class="pub-card" data-aos="fade-up" data-aos-delay="250">
-            <div class="pub-venue-badge">FSE 2023</div>
-            <h3 class="pub-title">Practical Inference of Nullability Types</h3>
-            <p class="pub-authors">Nima Karimipour, Justin Pham, Lazaro Clapp, and Manu Sridharan</p>
-            <p class="pub-venue-detail">In 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2023)</p>
-            <div class="pub-links">
-              <a href="https://manu.sridharan.net/pubs_bib.html#karimipour23practical" class="pub-link"><i class="fas fa-quote-right"></i> BibTeX</a>
-              <a href="http://dx.doi.org/10.1145/3611643.3616326" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-              <a href="https://manu.sridharan.net/files/FSE23Practical.pdf" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
-            </div>
-            <div class="pub-talk" id="presentation-embed-39014105"></div>
-            <script src="https://slideslive.com/embed_presentation.js"></script>
-            <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                new SlidesLiveEmbed("presentation-embed-39014105", {
-                  presentationId: "39014105",
-                  autoPlay: false,
-                  verticalEnabled: true,
-                });
-              });
-            </script>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section class="section section-alt" id="projects">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">04</span>
-        <h2 class="section-title">Open Source</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="project-grid">
-
-            <a href="https://github.com/ucr-riple/NullAwayAnnotator" target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up" data-aos-delay="100">
-              <div class="project-icon"><i class="fas fa-robot"></i></div>
-              <h3 class="project-name">Annotator</h3>
-              <p class="project-desc">Automated tool that integrates NullAway into existing codebases by inferring and applying nullability annotations at scale.</p>
-              <span class="project-tag">Java</span>
-            </a>
-
-            <a href="https://github.com/uber/NullAway" target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up" data-aos-delay="200">
-              <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
-              <h3 class="project-name">NullAway</h3>
-              <p class="project-desc">A fast, practical null pointer checker for Java, built as an Error Prone plugin. Core contributor with type inference extensions.</p>
-              <span class="project-tag">Java</span>
-            </a>
-
-            <a href="https://github.com/ucr-riple/TaintTyper" target="_blank" rel="noopener noreferrer" class="project-card" data-aos="fade-up" data-aos-delay="300">
-              <div class="project-icon"><i class="fas fa-fingerprint"></i></div>
-              <h3 class="project-name">TaintTyper</h3>
-              <p class="project-desc">A practical type-based taint checker and inference tool for Java, exceeding recall of state-of-the-art whole-program taint analyzers.</p>
-              <span class="project-tag">Java</span>
-            </a>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section class="section" id="education">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="section-tag">05</span>
-        <h2 class="section-title">Education</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <div class="edu-grid">
-
-            <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
-              <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <ul class="edu">
+          <li class="edu-item reveal">
+            <div>
               <h3 class="edu-degree">Ph.D. in Computer Science and Engineering</h3>
               <p class="edu-school"><a href="https://www.ucr.edu/">University of California, Riverside</a></p>
-              <p class="edu-date">2020 &ndash; 2025</p>
               <p class="edu-detail">Advisor: <a href="https://manu.sridharan.net/">Prof. Manu Sridharan</a></p>
             </div>
-
-            <div class="edu-card" data-aos="fade-up" data-aos-delay="200">
-              <div class="edu-icon"><i class="fas fa-university"></i></div>
+            <span class="edu-date">2020 — 2025</span>
+          </li>
+          <li class="edu-item reveal">
+            <div>
               <h3 class="edu-degree">B.Sc. in Computer Engineering</h3>
               <p class="edu-school"><a href="https://en.sharif.edu">Sharif University of Technology</a></p>
-              <p class="edu-date">2014 &ndash; 2018</p>
             </div>
+            <span class="edu-date">2014 — 2018</span>
+          </li>
+        </ul>
+      </section>
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <footer class="footer reveal">
+        <span>© 2026 Nima Karimipour</span>
+        <a href="#about" class="to-top">Back to top ↑</a>
+      </footer>
+    </main>
+  </div>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-links">
-          <a href="mailto:nima.karimipour@sonarsource.com" title="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://github.com/nimakarimipour" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/nima-karimipour-846359144/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://scholar.google.com/citations?user=zPD7PukAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-        </div>
-        <p class="footer-text">Nima Karimipour</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="scripts/main.js?ver=3.1.0"></script>
+  <script src="scripts/redesign.js?ver=4.0.0"></script>
 </body>
 
 </html>
