@@ -43,7 +43,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
   var icon = toggle.querySelector('i');
   var stored = localStorage.getItem('theme');
 
-  if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  if (stored === 'dark') {
     document.documentElement.setAttribute('data-theme', 'dark');
     icon.classList.replace('fa-moon', 'fa-sun');
   }

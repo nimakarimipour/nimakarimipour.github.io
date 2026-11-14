@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nima Karimipour — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  @page { size: Letter; margin: 0.5in 0.65in 0.5in; }
+
+  :root {
+    --ink: #1f1e1c;
+    --ink-2: #3d3b37;
+    --ink-3: #7d7971;
+    --rule: #cfc9bd;
+    --accent: #1f3a5f;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'EB Garamond', Garamond, Georgia, serif;
+    font-size: 10.4pt;
+    line-height: 1.33;
+    color: var(--ink-2);
+    font-feature-settings: "kern", "liga", "onum";
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  h1, h2, h3, p, ul { margin: 0; padding: 0; }
+  a { color: var(--accent); text-decoration: none; }
+
+  .sc { font-variant-caps: all-small-caps; letter-spacing: 0.08em; }
+
+  /* Header */
+  header { text-align: center; }
+  h1 {
+    font-weight: 400;
+    font-size: 25pt;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+    line-height: 1.1;
+  }
+  .role { margin-top: 2pt; font-style: italic; font-size: 12pt; }
+  .contact {
+    margin-top: 5pt;
+    font-size: 10pt;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.05em;
+  }
+    .contact span { white-space: nowrap; }
+  .contact span + span::before { content: "\00B7"; margin: 0 7pt; color: var(--ink-3); }
+  .contact a { color: var(--ink); }
+  .interests {
+    margin-top: 8pt;
+    padding: 4pt 0;
+    border-top: 0.6pt solid var(--rule);
+    border-bottom: 0.6pt solid var(--rule);
+    font-size: 10pt;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.08em;
+    color: var(--ink-3);
+  }
+  .interests span + span::before { content: "\00B7"; margin: 0 9pt; }
+
+  .summary { margin-top: 9pt; text-align: justify; hyphens: auto; }
+
+  /* Sections */
+  section { margin-top: 11pt; }
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 9pt;
+    margin-bottom: 6pt;
+    font-weight: 500;
+    font-size: 11.5pt;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.12em;
+    color: var(--ink);
+    break-after: avoid;
+  }
+  h2::after { content: ""; flex: 1; height: 0.6pt; background: var(--rule); }
+
+  .item { break-inside: avoid; }
+  .item + .item { margin-top: 6pt; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; gap: 12pt; }
+  h3 { font-weight: 600; font-size: 10.9pt; color: var(--ink); }
+  .date {
+    flex-shrink: 0;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.08em;
+    color: var(--ink-3);
+    font-size: 10.4pt;
+  }
+  .org { font-style: italic; }
+  .meta { font-size: 10.2pt; }
+  .meta .me { color: var(--ink); font-weight: 500; }
+  .venue { font-style: italic; color: var(--ink-3); font-size: 10.2pt; }
+
+  ul.b { margin-top: 2pt; list-style: none; }
+  ul.b li { position: relative; padding-left: 11pt; }
+  ul.b li::before { content: "\2013"; position: absolute; left: 0; color: var(--ink-3); }
+  p.desc { margin-top: 2pt; }
+
+  .links { font-variant-caps: all-small-caps; letter-spacing: 0.08em; font-size: 10pt; font-weight: 400; margin-left: 4pt; }
+  .links a + a::before { content: "\00B7"; margin: 0 4pt; color: var(--ink-3); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Nima Karimipour</h1>
+  <p class="role">Staff Software Engineer at Sonar &nbsp;&middot;&nbsp; working on Gitar &nbsp;&middot;&nbsp; Ph.D. in CS</p>
+  <p class="contact">
+    <span><a href="mailto:nima.karimipour@sonarsource.com">nima.karimipour@sonarsource.com</a></span>
+    <span><a href="https://nimakarimipour.github.io">nimakarimipour.github.io</a></span>
+    <span><a href="https://github.com/nimakarimipour">GitHub</a></span>
+    <span><a href="https://www.linkedin.com/in/nima-karimipour-846359144/">LinkedIn</a></span>
+    <span><a href="https://scholar.google.com/citations?user=zPD7PukAAAAJ&hl=en">Google Scholar</a></span>
+  </p>
+  <p class="interests">
+    <span>Software Engineering</span><span>Programming Languages</span><span>Static Analysis</span><span>Security and Reliability</span><span>AI Agents</span>
+  </p>
+</header>
+
+<p class="summary">
+  Staff Software Engineer at <a href="https://www.sonarsource.com">Sonar</a>, building agents on
+  <a href="https://gitar.ai">Gitar</a>, the AI-native code review platform Sonar acquired in May 2026.
+  Ph.D. in Computer Science from the University of California, Riverside, advised by Prof. Manu Sridharan.
+  Research centers on programming languages and software engineering, with a focus on pluggable type systems,
+  null safety, taint analysis, and automating code fixes with large language models (LLMs), building tools that
+  boost the reliability and security of large-scale software systems.
+</p>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="item">
+    <div class="head"><h3>Staff Software Engineer</h3><span class="date">2026 &ndash; Present</span></div>
+    <p class="org">Sonar &mdash; Gitar</p>
+    <ul class="b">
+      <li>Building agents for software engineering automation on Gitar, now part of Sonar&rsquo;s code verification platform.</li>
+      <li>Gitar reviews code from the moment an agent starts writing it to the moment it lands, generating fixes and iterating until CI passes.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="head"><h3>Research Scientist</h3><span class="date">2025 &ndash; 2026</span></div>
+    <p class="org">Gitar.ai</p>
+    <ul class="b">
+      <li>Built agents for software engineering automation.</li>
+      <li>Gitar was <a href="https://www.sonarsource.com/company/press-releases/sonar-acquires-gitar/">acquired by Sonar</a> in May 2026, expanding Sonar&rsquo;s code verification platform into AI code review.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="head"><h3>Ph.D. Research Intern</h3><span class="date">Jun &ndash; Sep 2022</span></div>
+    <p class="org">Uber Technologies, Inc. &mdash; Programming Systems Group (PSG)</p>
+    <ul class="b">
+      <li>Enhanced <a href="https://github.com/uber/NullAway">NullAway</a>, Uber&rsquo;s type-based checker designed to prevent NullPointerExceptions (NPEs) across Java and Android monorepos.</li>
+      <li>Extended <a href="https://github.com/ucr-riple/NullAwayAnnotator">Annotator</a> to work at monorepo scale, with support for build target boundaries so that inferred annotations do not trigger errors in downstream dependencies.</li>
+      <li>Automated annotation inference over millions of lines of code, leading to the complete enrollment of Uber&rsquo;s Java monorepo into NullAway.</li>
+      <li>Published the work with Uber at ESEC/FSE 2023: <em>Practical Inference of Nullability Types</em>.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="item">
+    <div class="head"><h3>Ph.D. in Computer Science and Engineering</h3><span class="date">2020 &ndash; 2025</span></div>
+    <p class="org">University of California, Riverside &mdash; Advisor: Prof. Manu Sridharan (<a href="https://riple.cs.ucr.edu/">RIPLE</a> group)</p>
+  </div>
+  <div class="item">
+    <div class="head"><h3>B.Sc. in Computer Engineering</h3><span class="date">2014 &ndash; 2018</span></div>
+    <p class="org">Sharif University of Technology, Tehran, Iran</p>
+  </div>
+</section>
+
+<section>
+  <h2>Publications</h2>
+
+  <div class="item">
+    <div class="head"><h3>LLM-Based Repair of Static Nullability Errors <span class="links"><a href="https://arxiv.org/pdf/2507.20674">pdf</a></span></h3><span class="date">ISSTA 2026</span></div>
+    <p class="meta"><span class="me">Nima Karimipour</span>, Pascal Joos, Michael Pradel, Martin Kellogg, and Manu Sridharan</p>
+    <p class="venue">35th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2026)</p>
+  </div>
+
+  <div class="item">
+    <div class="head"><h3>Practical Type-Based Taint Checking and Inference <span class="links"><a href="https://arxiv.org/abs/2504.18529">pdf</a></span></h3><span class="date">ECOOP 2025</span></div>
+    <p class="meta"><span class="me">Nima Karimipour</span>, Kanak Das, Behnaz Hassanshahi, and Manu Sridharan (in collaboration with Oracle Labs)</p>
+    <p class="venue">39th European Conference on Object-Oriented Programming (ECOOP 2025)</p>
+    <ul class="b">
+      <li>Proposes a type-based taint checker that reduces false positives, improving handling of third-party libraries and complex language constructs.</li>
+      <li>Introduces an automated technique to infer tainting type qualifiers, including support for polymorphic annotations and generic types.</li>
+      <li>Outperforms whole-program taint analyzers (e.g. CodeQL), achieving comparable precision and recall while operating 27&times; faster.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="head"><h3>A New Approach to Evaluating Nullability Inference Tools <span class="links"><a href="http://dx.doi.org/10.1145/3715732">doi</a></span></h3><span class="date">FSE 2025</span></div>
+    <p class="meta"><span class="me">Nima Karimipour</span>, Erfan Arvan, Martin Kellogg, and Manu Sridharan</p>
+    <p class="venue">33rd ACM International Conference on the Foundations of Software Engineering (FSE 2025)</p>
+    <ul class="b">
+      <li>Identifies bias in prior evaluations of nullability inference tools, showing that &ldquo;type reconstruction&rdquo; experiments can inflate effectiveness.</li>
+      <li>Proposes a new, unbiased definition of &ldquo;best&rdquo; inferred annotations, better suited for comparing inference tools.</li>
+      <li>Conducts the first head-to-head comparison of three inference tools, revealing their unique strengths and areas for improvement.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="head"><h3>Practical Inference of Nullability Types <span class="links"><a href="https://manu.sridharan.net/files/FSE23Practical.pdf">pdf</a><a href="https://slideslive.com/39014105">talk</a></span></h3><span class="date">ESEC/FSE 2023</span></div>
+    <p class="meta"><span class="me">Nima Karimipour</span>, Justin Pham, Lazaro Clapp, and Manu Sridharan (in collaboration with Uber Technologies, Inc.)</p>
+    <p class="venue">31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2023)</p>
+    <ul class="b">
+      <li>Introduces a tool to automatically infer nullability type qualifiers, easing NPE prevention in large Java codebases, using a black-box search strategy to maximize type-checked code.</li>
+      <li>Achieves a 69.5% reduction in NullAway errors on average across Java projects.</li>
+      <li>Deployed in production at Uber, enrolling 160+ modules and 1.3 million lines of code into NullAway.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Open Source</h2>
+
+  <div class="item">
+    <div class="head"><h3><a href="https://github.com/ucr-riple/NullAwayAnnotator">Annotator</a> <span class="venue">&nbsp;Java</span></h3><span class="date">2023</span></div>
+    <p class="desc">Automated tool that integrates NullAway into existing codebases by inferring and applying nullability annotations at scale.</p>
+    <ul class="b">
+      <li>Instantly generates patches with no remaining checker errors, applying suppressions where annotations alone cannot resolve them.</li>
+      <li>Supports large-scale projects incrementally, target by target; scaled to fully integrate NullAway across Uber&rsquo;s entire monorepo.</li>
+      <li>Recognized with a dedicated blog post by Gitar: <a href="https://gitar.ai/blog/automating-java-codebase-annotations-for-null-safety"><em>Automating Java Codebase Annotations for Null Safety</em></a>.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="head"><h3><a href="https://github.com/uber/NullAway">NullAway</a> <span class="venue">&nbsp;Java</span></h3><span class="date">2022</span></div>
+    <p class="desc">A fast, practical null pointer checker for Java, built as an Error Prone plugin. Core contributor with type inference extensions.</p>
+    <ul class="b">
+      <li>Enhanced to support expressing method preconditions and postconditions.</li>
+      <li>Added a serialization service to log errors and compute quick-fix suggestions for errors reported by the checker.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="head"><h3><a href="https://github.com/ucr-riple/TaintTyper">TaintTyper</a> <span class="venue">&nbsp;Java</span></h3><span class="date">2024</span></div>
+    <p class="desc">A practical type-based taint checker and inference tool for Java, exceeding recall of state-of-the-art whole-program taint analyzers.</p>
+    <ul class="b">
+      <li>Modular and incremental checking for better scalability and performance.</li>
+      <li>Automatically infers tainting type qualifiers, including polymorphic and generic type argument annotations.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Awards</h2>
+  <div class="item">
+    <div class="head"><h3>Dean&rsquo;s Distinguished Fellowship Award</h3><span class="date">2020</span></div>
+    <p class="org">Ph.D. program, University of California, Riverside</p>
+  </div>
+</section>
+
+</body>
+</html>
